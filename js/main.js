@@ -17,11 +17,17 @@ elBtn.addEventListener('click', () => {
 })
 
 elArrParall.addEventListener('click', (ev) => {
-    if(ev.target.classList.value != 'parallel') {return}
-    else {
+    if(ev.target.classList.value != 'parallel') 
+    {
+        //ev.target.style.visibility = 'hidden';
+        ev.target.classList.remove('number');
+        ev.target.innerHTML = '';
+        elCount.value = '';
+        return;
+    } else {
         ev.target.innerHTML = ev.target.id;
-        ev.target.classList.toggle('number');
-        console.log(ev.target.classList);
+        ev.target.classList.add('number');
+        //ev.target.classList.toggle('number');
+        //console.log(ev.target.classList);
     }
 })
-
