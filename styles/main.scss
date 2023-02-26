@@ -1,0 +1,25 @@
+.wrap {
+    max-width: 1320px;
+    margin: 10px auto;
+
+}
+
+.arrParallel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 10px;
+}
+
+.parallel {
+    width: 200px;
+    height: 100px;
+    transform: skew(170deg);
+    border: 1px solid #000; 
+}
+
+.number {
+    font-size: 90px;
+    background-color: bisque;
+    text-align: center;
+}
